@@ -1,0 +1,125 @@
+/* Segment SVG styles */
+
+.segment {
+    stroke: none;
+    fill: var(--segment-default);
+}
+
+.segment-group {
+    transform: scale(0.5);
+}
+
+#segment-a {
+    transform: translate(80px, 100px) rotate(-90deg);
+}
+
+#segment-b {
+    transform: translate(300px, 80px);
+}
+
+#segment-c {
+    transform: translate(300px, 340px);
+}
+
+#segment-d {
+    transform: translate(80px, 640px) rotate(-90deg);
+}
+
+#segment-e {
+    transform: translate(20px, 340px);
+}
+
+#segment-f {
+    transform: translate(20px, 80px);
+}
+
+#segment-g {
+    transform: translate(80px, 370px) rotate(-90deg);
+}
+
+.segment-input:invalid ~ svg #segment-a,
+.segment-input:invalid ~ svg #segment-d,
+.segment-input:invalid ~ svg #segment-e,
+.segment-input:invalid ~ svg #segment-f,
+.segment-input:invalid ~ svg #segment-g {
+    fill: var(--segment-error);
+}
+
+/* Segment input selectors for segments */
+.segment-input[value="0"] ~ svg #segment-a,
+.segment-input[value="2"] ~ svg #segment-a,
+.segment-input[value="3"] ~ svg #segment-a,
+.segment-input[value="5"] ~ svg #segment-a,
+.segment-input[value="6"] ~ svg #segment-a,
+.segment-input[value="7"] ~ svg #segment-a,
+.segment-input[value="8"] ~ svg #segment-a,
+.segment-input[value="9"] ~ svg #segment-a
+{
+    fill: var(--segment-fill);
+}
+
+.segment-input[value="0"] ~ svg #segment-b,
+.segment-input[value="1"] ~ svg #segment-b,
+.segment-input[value="2"] ~ svg #segment-b,
+.segment-input[value="3"] ~ svg #segment-b,
+.segment-input[value="4"] ~ svg #segment-b,
+.segment-input[value="7"] ~ svg #segment-b,
+.segment-input[value="8"] ~ svg #segment-b,
+.segment-input[value="9"] ~ svg #segment-b
+{
+    fill: var(--segment-fill);
+}
+
+.segment-input[value="0"] ~ svg #segment-c,
+.segment-input[value="1"] ~ svg #segment-c,
+.segment-input[value="3"] ~ svg #segment-c,
+.segment-input[value="4"] ~ svg #segment-c,
+.segment-input[value="5"] ~ svg #segment-c,
+.segment-input[value="6"] ~ svg #segment-c,
+.segment-input[value="7"] ~ svg #segment-c,
+.segment-input[value="8"] ~ svg #segment-c,
+.segment-input[value="9"] ~ svg #segment-c
+{
+    fill: var(--segment-fill);
+}
+
+.segment-input[value="0"] ~ svg #segment-d,
+.segment-input[value="2"] ~ svg #segment-d,
+.segment-input[value="3"] ~ svg #segment-d,
+.segment-input[value="5"] ~ svg #segment-d,
+.segment-input[value="6"] ~ svg #segment-d,
+.segment-input[value="8"] ~ svg #segment-d,
+.segment-input[value="9"] ~ svg #segment-d
+{
+    fill: var(--segment-fill);
+}
+
+.segment-input[value="0"] ~ svg #segment-e,
+.segment-input[value="2"] ~ svg #segment-e,
+.segment-input[value="6"] ~ svg #segment-e,
+.segment-input[value="8"] ~ svg #segment-e
+{
+    fill: var(--segment-fill);
+}
+
+.segment-input[value="0"] ~ svg #segment-f,
+.segment-input[value="4"] ~ svg #segment-f,
+.segment-input[value="5"] ~ svg #segment-f,
+.segment-input[value="6"] ~ svg #segment-f,
+.segment-input[value="8"] ~ svg #segment-f,
+.segment-input[value="9"] ~ svg #segment-f
+{
+    fill: var(--segment-fill);
+}
+
+.segment-input[value="2"] ~ svg #segment-g,
+.segment-input[value="3"] ~ svg #segment-g,
+.segment-input[value="4"] ~ svg #segment-g,
+.segment-input[value="5"] ~ svg #segment-g,
+.segment-input[value="6"] ~ svg #segment-g,
+.segment-input[value="8"] ~ svg #segment-g,
+.segment-input[value="9"] ~ svg #segment-g
+{
+    fill: var(--segment-fill);
+}
+

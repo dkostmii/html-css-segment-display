@@ -1,0 +1,47 @@
+:root {
+    font-family: 'Roboto Mono', monospace;
+    --segment-fill: #111;
+    --segment-default: #DDD;
+    --segment-error: #E12;
+    --bg: #EEE;
+    --fg: #111;
+}
+
+body, input {
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+input {
+    border: 1px solid var(--fg);
+    border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #111;
+        --fg: #CCC;
+        --segment-fill: #CCC;
+        --segment-default: #222;
+        --segment-error: #BB1208;
+    }
+
+    input {
+        outline-offset: .5rem;
+    }
+}
+
+body, .segment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.segment-input {
+    font-size: 2rem;
+    padding: .75rem;
+
+    max-width: 320px;
+}
+

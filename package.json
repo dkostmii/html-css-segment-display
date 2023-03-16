@@ -1,0 +1,23 @@
+{
+  "name": "html-css-segment-display",
+  "version": "1.0.0",
+  "description": "7-segment display using HTML and CSS",
+  "main": "index.js",
+  "scripts": {
+      "serve": "browser-sync -w ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkostmii/html-css-segment-display.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkostmii/html-css-segment-display/issues"
+  },
+  "homepage": "https://github.com/dkostmii/html-css-segment-display#readme",
+  "devDependencies": {
+    "browser-sync": "^2.28.3"
+  }
+}
